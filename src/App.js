@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     if (city) {
       fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ac0a6285171a5e78cc8abcdf306c373e`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=2bb71cdc8b24f15d341b56c838bf09ad
       )
         .then((res) => res.json())
         .then((data) => {
