@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     if (city) {
       fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=2bb71cdc8b24f15d341b56c838bf09ad`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_OWAPI1}`
       )
         .then((res) => res.json())
         .then((data) => {
@@ -47,7 +47,7 @@ function App() {
   function success(position) {
     // let {latitude, longitude} = position.coords;
     fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${position.coords.latitude}&lon=${position.coords.longitude}&
-    exclude=current&appid=ac0a6285171a5e78cc8abcdf306c373e`)
+    exclude=current&appid=${process.env.REACT_APP_OWAPI2}`)
       .then((res) => res.json())
       .then((data) => {
         let hourlyTemp = data.hourly.slice(0, 24).map((x, i) => {
