@@ -1,0 +1,50 @@
+.search {
+  &__bar {
+    margin: 2.2rem auto;
+    width: 90%;
+    max-width: 81.7rem;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    &:focus {
+      border: 1px solid blue;
+    }
+    &:focus-within {
+      box-shadow: 1px 1px 8px 1px #dcdcdc;
+      outline: none;
+    }
+
+    &--input {
+      height: 5.5rem;
+      border: none;
+      width: 80%;
+      font-size: 16px;
+      outline: none;
+    }
+
+    &--icon-location {
+      position: relative;
+      & > ion-icon {
+        font-size: 2.2rem;
+        position: absolute;
+        transform: translate(70%, -50%);
+        top: 0.3rem;
+        right: 3.5rem;
+        color: black;
+      }
+    }
+
+    &--icon-search {
+      position: relative;
+
+      & > ion-icon {
+        font-size: 2.2rem;
+        position: absolute;
+        transform: translate(-170%, -50%);
+        top: 0.3rem;
+        right: -7.5rem;
+        color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.time {
+  margin: 0 auto;
+  max-width: 81.7rem;
+  &__chart {
+    margin: 0 auto;
+    & > div {
+      margin: 0 auto;
+    }
+
+    border: 1px solid transparent;
+    display: inline-block;
+    border-bottom: 1px solid brown;
+    // Todo
+    // width: 38%;
+    // max-width: 50%;
+    width: 100%;
+    margin: 1rem auto;
+    justify-content: center;
+  }
+
+  &__day {
+    display: flex;
+    border: 1px solid transparent;
+    width: 90%;
+    max-width: 81.7rem;
+    margin: 2rem auto;
+    justify-content: space-between;
+    font-size: 1.7rem;
+
+    &--sunrise {
+      border: 1px solid transparent;
+      &-timing {
+        font-size: 1.5rem;
+        opacity: 0.7;
+        color: #333;
+      }
+    }
+    &--sunset {
+      border: 1px solid transparent;
+      &-timing {
+        font-size: 1.5rem;
+        opacity: 0.7;
+        color: #333;
+      }
+    }
+  }
+
+  &__position {
+    width: 90%;
+    max-width: 81.7rem;
+    margin: 0rem auto;
+    display: grid;
+    font-size: 1.6rem;
+    grid-template-columns: 0fr 1fr 0fr;
+    opacity: 0.6;
+    color: #333;
+
+    & span {
+      // margin-right: 17rem;
+    }
+  }
+}

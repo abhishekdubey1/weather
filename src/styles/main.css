@@ -1,0 +1,188 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 992px) {
+    html {
+      font-size: 58%; } }
+  @media (max-width: 768px) {
+    html {
+      font-size: 55%; } }
+  @media (max-width: 596px) {
+    html {
+      font-size: 53%; } }
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  text-align: center; }
+
+.search__bar {
+  margin: 2.2rem auto;
+  width: 90%;
+  max-width: 81.7rem;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  box-shadow: 1px 1px 8px 1px #dcdcdc; }
+  .search__bar:focus {
+    border: 1px solid blue; }
+  .search__bar:focus-within {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline: none; }
+  .search__bar--input {
+    height: 5.5rem;
+    border: none;
+    width: 80%;
+    font-size: 16px;
+    outline: none; }
+  .search__bar--icon-location {
+    position: relative; }
+    .search__bar--icon-location > ion-icon {
+      font-size: 2.2rem;
+      position: absolute;
+      transform: translate(70%, -50%);
+      top: 0.3rem;
+      right: 3.5rem;
+      color: black; }
+  .search__bar--icon-search {
+    position: relative; }
+    .search__bar--icon-search > ion-icon {
+      font-size: 2.2rem;
+      position: absolute;
+      transform: translate(-170%, -50%);
+      top: 0.3rem;
+      right: -7.5rem;
+      color: black; }
+
+.cards {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 81.7rem;
+  display: flex;
+  overflow-x: scroll; }
+  .cards:focus {
+    outline: blue auto 1px;
+    background-color: wheat; }
+
+.card {
+  min-width: 10rem;
+  margin: 1rem 1.2%; }
+  .card__input {
+    opacity: 0; }
+  .card__data {
+    font-size: 1.6rem;
+    font-weight: 600; }
+    .card__data--max {
+      font-weight: 500; }
+    .card__data--min {
+      color: #919393;
+      font-weight: 400; }
+    .card__data--icon {
+      margin: 1rem auto;
+      width: 3rem; }
+    .card__data--weather {
+      color: #919393;
+      font-weight: 500;
+      font-size: 1.7rem; }
+
+/* .card__day */
+main {
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  margin: 2.2rem auto;
+  width: 90%;
+  max-width: 81.7rem; }
+
+.chart {
+  background-color: white;
+  margin: 2rem auto;
+  min-width: 80%;
+  max-width: 78rem;
+  overflow-x: scroll;
+  overflow-y: scroll; }
+  .chart__header {
+    text-align: left; }
+    .chart__header--icon > svg {
+      width: 5rem; }
+    .chart__header--temp {
+      font-size: 4.5rem;
+      font-weight: bolder;
+      margin-right: 3rem; }
+
+.weather {
+  margin: 0px auto;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  width: 90%;
+  max-width: 81.7rem;
+  display: grid;
+  display: flex;
+  justify-content: space-between; }
+  .weather__pressure {
+    text-align: left;
+    padding: 1rem 1rem;
+    background-color: #f3fbff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 49%; }
+    .weather__pressure--data {
+      font-size: 1.5rem;
+      font-weight: 200; }
+  .weather__humidity {
+    text-align: left;
+    padding: 1rem 1rem;
+    background-color: #f3fbff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 49%; }
+    .weather__humidity--data {
+      font-size: 1.5rem;
+      font-weight: 200; }
+
+.time {
+  margin: 0 auto;
+  max-width: 81.7rem; }
+  .time__chart {
+    margin: 0 auto;
+    border: 1px solid transparent;
+    display: inline-block;
+    border-bottom: 1px solid brown;
+    width: 100%;
+    margin: 1rem auto;
+    justify-content: center; }
+    .time__chart > div {
+      margin: 0 auto; }
+  .time__day {
+    display: flex;
+    border: 1px solid transparent;
+    width: 90%;
+    max-width: 81.7rem;
+    margin: 2rem auto;
+    justify-content: space-between;
+    font-size: 1.7rem; }
+    .time__day--sunrise {
+      border: 1px solid transparent; }
+      .time__day--sunrise-timing {
+        font-size: 1.5rem;
+        opacity: 0.7;
+        color: #333; }
+    .time__day--sunset {
+      border: 1px solid transparent; }
+      .time__day--sunset-timing {
+        font-size: 1.5rem;
+        opacity: 0.7;
+        color: #333; }
+  .time__position {
+    width: 90%;
+    max-width: 81.7rem;
+    margin: 0rem auto;
+    display: grid;
+    font-size: 1.6rem;
+    grid-template-columns: 0fr 1fr 0fr;
+    opacity: 0.6;
+    color: #333; }

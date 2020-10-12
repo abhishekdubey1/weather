@@ -1,0 +1,44 @@
+.cards {
+  // border: 1px solid black;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 81.7rem;
+  display: flex;
+  // justify-content: center;
+  overflow-x: scroll;
+  &:focus {
+    outline: blue auto 1px;
+    background-color: wheat;
+    // justify-items: center;
+  }
+}
+
+.card {
+  min-width: 10rem;
+  margin: 1rem 1.2%;
+  // border: 1px solid blue;
+  &__input {
+    opacity: 0;
+  }
+  &__data {
+    font-size: 1.6rem;
+    font-weight: 600;
+    &--max {
+      font-weight: 500;
+    }
+    &--min {
+      color: #919393;
+      font-weight: 400;
+    }
+    &--icon {
+      margin: 1rem auto;
+      width: 3rem;
+    }
+    &--weather {
+      color: #919393;
+      font-weight: 500;
+      font-size: 1.7rem;
+    }
+  }
+}
+/* .card__day */

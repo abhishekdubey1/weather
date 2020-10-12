@@ -1,0 +1,21 @@
+.chart {
+  background-color: rgb(255, 255, 255);
+  margin: 2rem auto;
+  min-width: 80%;
+  max-width: 78rem;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  &__header {
+    text-align: left;
+    &--icon {
+      & > svg {
+        width: 5rem;
+      }
+    }
+    &--temp {
+      font-size: 4.5rem;
+      font-weight: bolder;
+      margin-right: 3rem;
+    }
+  }
+}
